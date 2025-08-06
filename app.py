@@ -98,11 +98,6 @@ class CollegeChatbot:
                 include_metadata=True
             )
             
-            # Debug: Print search results
-            st.write("🔍 **Debug - Search Results:**")
-            for i, match in enumerate(results.matches):
-                st.write(f"Match {i+1}: Score = {match.score:.3f}, Title = {match.metadata.get('title', 'N/A')}")
-            
             return results.matches
             
         except Exception as e:
@@ -114,24 +109,17 @@ class CollegeChatbot:
         # Search for relevant documents
         matches = self.search_documents(query)
         
-        # Debug information
-        st.write(f"🔍 **Debug Info:**")
-        st.write(f"- Query: '{query}'")
-        st.write(f"- Number of matches found: {len(matches)}")
-        
         if not matches:
-            return "I'm sorry, I don't have information on that at the moment. Please check with your college administration. (No matches found)"
+            return "I'm sorry, I don't have information on that at the moment. Please check with your college administration."
         
-        # Lower similarity threshold for better matching
-        similarity_threshold = 0.5  # Reduced from 0.7 to 0.5
+        # Similarity threshold for matching
+        similarity_threshold = 0.5
         
         # Find best match above threshold
         best_match = matches[0] if matches else None
-        st.write(f"- Best match score: {best_match.score:.3f}")
-        st.write(f"- Similarity threshold: {similarity_threshold}")
         
         if not best_match or best_match.score < similarity_threshold:
-            return f"I'm sorry, I don't have information on that at the moment. Please check with your college administration. (Best match score: {best_match.score:.3f}, threshold: {similarity_threshold})"
+            return "I'm sorry, I don't have information on that at the moment. Please check with your college administration."
         
         # Combine relevant content from matches above threshold
         relevant_content = []
@@ -142,7 +130,7 @@ class CollegeChatbot:
                 relevant_content.append(f"**{title}**: {content}")
         
         if not relevant_content:
-            return f"I'm sorry, I don't have information on that at the moment. Please check with your college administration. (No content above threshold)"
+            return "I'm sorry, I don't have information on that at the moment. Please check with your college administration."
         
         # Create formatted response
         response = "Based on the college information:\n\n" + "\n\n".join(relevant_content[:2])
@@ -229,18 +217,6 @@ def student_interface():
     # Initialize chatbot
     chatbot = CollegeChatbot()
     
-    # Add debug toggle
-    debug_mode = st.toggle("🔧 Debug Mode", help="Show search scores and debug information")
-    
-    # Index statistics
-    with st.expander("📊 Index Statistics"):
-        try:
-            stats = chatbot.index.describe_index_stats()
-            st.write(f"**Total vectors in index:** {stats.get('total_vector_count', 'Unknown')}")
-            st.write(f"**Index dimension:** {stats.get('dimension', 'Unknown')}")
-        except Exception as e:
-            st.error(f"Could not retrieve index stats: {str(e)}")
-    
     # Chat interface
     if prompt := st.chat_input("Ask your question..."):
         # Add user message to chat history
@@ -248,18 +224,40 @@ def student_interface():
         
         # Generate response
         with st.spinner("Searching for information..."):
-            if debug_mode:
-                st.write("### 🔍 Debug Information")
             response = chatbot.generate_response(prompt)
         
         # Add assistant response to chat history
         st.session_state.chat_history.append({"role": "assistant", "content": response})
     
-    # Display chat history (but filter out debug info for clean display)
-    st.write("### 💬 Chat History")
+    # Display chat history
     for message in st.session_state.chat_history:
         with st.chat_message(message["role"]):
             st.write(message["content"])
+    
+    # Quick action buttons
+    st.subheader("Quick Questions")
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        if st.button("📊 Placement Statistics"):
+            st.session_state.chat_history.append({"role": "user", "content": "What are the latest placement statistics?"})
+            response = chatbot.generate_response("What are the latest placement statistics?")
+            st.session_state.chat_history.append({"role": "assistant", "content": response})
+            st.rerun()
+    
+    with col2:
+        if st.button("📅 Upcoming Events"):
+            st.session_state.chat_history.append({"role": "user", "content": "What are the upcoming events?"})
+            response = chatbot.generate_response("What are the upcoming events?")
+            st.session_state.chat_history.append({"role": "assistant", "content": response})
+            st.rerun()
+    
+    with col3:
+        if st.button("📚 Exam Schedule"):
+            st.session_state.chat_history.append({"role": "user", "content": "What is the exam schedule?"})
+            response = chatbot.generate_response("What is the exam schedule?")
+            st.session_state.chat_history.append({"role": "assistant", "content": response})
+            st.rerun()
     
     # Quick action buttons
     st.subheader("Quick Questions")
