@@ -1,0 +1,95 @@
+2025-08-08 11:03:42,261 - logging_config - INFO - Logging system initialized
+2025-08-08 11:03:42,340 - src.database.models - INFO - Initializing postgresql database...
+2025-08-08 11:03:42,671 - src.database.models - INFO - postgresql database tables created successfully
+2025-08-08 11:03:42,739 - src.database.models - INFO - Default admin user already exists
+2025-08-08 11:03:42,739 - logging_config - INFO - Database initialized successfully
+2025-08-08 11:03:56,543 - logging_config - INFO - Logging system initialized
+2025-08-08 11:03:56,544 - src.database.models - INFO - Initializing postgresql database...
+2025-08-08 11:03:56,618 - src.database.models - INFO - postgresql database tables created successfully
+2025-08-08 11:03:56,681 - src.database.models - INFO - Default admin user already exists
+2025-08-08 11:03:56,682 - logging_config - INFO - Database initialized successfully
+2025-08-08 11:03:56,686 - src.ui.interfaces - INFO - Login attempt for user: mohith
+2025-08-08 11:03:56,687 - src.database.auth - INFO - Authenticating user: mohith
+2025-08-08 11:03:57,116 - src.database.auth - INFO - User mohith authenticated successfully
+2025-08-08 11:03:57,119 - src.ui.interfaces - INFO - User mohith logged in successfully as student
+2025-08-08 11:03:57,315 - logging_config - INFO - Logging system initialized
+2025-08-08 11:03:57,316 - src.database.models - INFO - Initializing postgresql database...
+2025-08-08 11:03:57,389 - src.database.models - INFO - postgresql database tables created successfully
+2025-08-08 11:03:57,453 - src.database.models - INFO - Default admin user already exists
+2025-08-08 11:03:57,454 - logging_config - INFO - Database initialized successfully
+2025-08-08 11:03:57,458 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 11:04:00,846 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 11:04:00,846 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 11:04:00,846 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 11:04:07,218 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 11:04:07,220 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 11:04:33,445 - logging_config - INFO - Logging system initialized
+2025-08-08 11:04:33,450 - src.database.models - INFO - Initializing postgresql database...
+2025-08-08 11:04:33,536 - src.database.models - INFO - postgresql database tables created successfully
+2025-08-08 11:04:33,599 - src.database.models - INFO - Default admin user already exists
+2025-08-08 11:04:33,600 - logging_config - INFO - Database initialized successfully
+2025-08-08 11:04:33,605 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 11:04:35,230 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 11:04:35,231 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 11:04:35,231 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 11:04:38,684 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 11:04:38,685 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 11:04:38,688 - src.ui.interfaces - INFO - Quick action - Placement Statistics by user mohith
+2025-08-08 11:04:38,688 - src.chatbot.college_chatbot - INFO - Searching for query: What are the latest placement statistics?...
+2025-08-08 11:04:40,844 - src.chatbot.college_chatbot - INFO - Found 2 matches for query
+2025-08-08 11:04:41,070 - logging_config - INFO - Logging system initialized
+2025-08-08 11:04:41,072 - src.database.models - INFO - Initializing postgresql database...
+2025-08-08 11:04:41,253 - src.database.models - INFO - postgresql database tables created successfully
+2025-08-08 11:04:41,323 - src.database.models - INFO - Default admin user already exists
+2025-08-08 11:04:41,323 - logging_config - INFO - Database initialized successfully
+2025-08-08 11:04:41,328 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 11:04:43,315 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 11:04:43,316 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 11:04:43,316 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 11:04:46,088 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 11:04:46,090 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 11:04:48,536 - logging_config - INFO - Logging system initialized
+2025-08-08 11:04:48,540 - src.database.models - INFO - Initializing postgresql database...
+2025-08-08 11:04:48,629 - src.database.models - INFO - postgresql database tables created successfully
+2025-08-08 11:04:48,695 - src.database.models - INFO - Default admin user already exists
+2025-08-08 11:04:48,696 - logging_config - INFO - Database initialized successfully
+2025-08-08 11:04:48,701 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 11:04:50,350 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 11:04:50,350 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 11:04:50,350 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 11:04:54,030 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 11:04:54,032 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 11:04:54,036 - src.ui.interfaces - INFO - Quick action - Upcoming Events by user mohith
+2025-08-08 11:04:54,037 - src.chatbot.college_chatbot - INFO - Searching for query: What are the upcoming events?...
+2025-08-08 11:04:55,920 - src.chatbot.college_chatbot - INFO - Found 2 matches for query
+2025-08-08 11:04:56,144 - logging_config - INFO - Logging system initialized
+2025-08-08 11:04:56,146 - src.database.models - INFO - Initializing postgresql database...
+2025-08-08 11:04:56,228 - src.database.models - INFO - postgresql database tables created successfully
+2025-08-08 11:04:56,289 - src.database.models - INFO - Default admin user already exists
+2025-08-08 11:04:56,290 - logging_config - INFO - Database initialized successfully
+2025-08-08 11:04:56,295 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 11:04:58,085 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 11:04:58,085 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 11:04:58,086 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 11:05:00,969 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 11:05:00,970 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 11:05:04,167 - logging_config - INFO - Logging system initialized
+2025-08-08 11:05:04,168 - src.database.models - INFO - Initializing postgresql database...
+2025-08-08 11:05:04,258 - src.database.models - INFO - postgresql database tables created successfully
+2025-08-08 11:05:04,324 - src.database.models - INFO - Default admin user already exists
+2025-08-08 11:05:04,324 - logging_config - INFO - Database initialized successfully
+2025-08-08 11:05:04,329 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 11:05:06,081 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 11:05:06,081 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 11:05:06,081 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 11:05:08,956 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 11:05:08,957 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 11:05:08,965 - src.ui.interfaces - INFO - Quick action - Exam Schedule by user mohith
+2025-08-08 11:05:08,966 - src.chatbot.college_chatbot - INFO - Searching for query: What is the exam schedule?...
+2025-08-08 11:05:10,848 - src.chatbot.college_chatbot - INFO - Found 2 matches for query
+2025-08-08 11:05:11,072 - logging_config - INFO - Logging system initialized
+2025-08-08 11:05:11,074 - src.database.models - INFO - Initializing postgresql database...
+2025-08-08 11:05:11,148 - src.database.models - INFO - postgresql database tables created successfully
+2025-08-08 11:05:11,213 - src.database.models - INFO - Default admin user already exists
+2025-08-08 11:05:11,213 - logging_config - INFO - Database initialized successfully
+2025-08-08 11:05:11,218 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
