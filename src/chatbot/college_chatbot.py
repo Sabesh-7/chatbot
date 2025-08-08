@@ -14,6 +14,7 @@ logger = logging.getLogger(__name__)
 
 class CollegeChatbot:
     def __init__(self):
+        self.pinecone_available = False
         self.setup_pinecone()
         self.setup_embeddings()
         
@@ -23,8 +24,8 @@ class CollegeChatbot:
             # Get API key from environment or Streamlit secrets
             api_key = st.secrets.get("PINECONE_API_KEY") or Config.PINECONE_API_KEY
             if not api_key:
-                logger.error("Pinecone API key not found")
-                st.error("Pinecone API key not found. Please add it to your .env file or Streamlit secrets.")
+                logger.warning("Pinecone API key not found - running in fallback mode")
+                st.warning("Pinecone not configured. Running in basic mode without vector search.")
                 return
             
             # Initialize Pinecone
@@ -47,10 +48,12 @@ class CollegeChatbot:
             
             self.index = self.pc.Index(index_name)
             logger.info("Pinecone index connected successfully")
+            self.pinecone_available = True
             
         except Exception as e:
-            logger.error(f"Error setting up Pinecone: {str(e)}")
-            st.error(f"Error setting up Pinecone: {str(e)}")
+            logger.warning(f"Pinecone setup failed - running in fallback mode: {str(e)}")
+            st.warning("Pinecone not available. Running in basic mode without vector search.")
+            self.pinecone_available = False
             
     def setup_embeddings(self):
         """Initialize sentence transformer model"""
@@ -64,6 +67,10 @@ class CollegeChatbot:
     
     def add_document(self, content: str, category: str, metadata: Dict[str, Any]):
         """Add document to Pinecone index"""
+        if not self.pinecone_available:
+            st.warning("Pinecone not available. Document not saved.")
+            return False
+            
         try:
             logger.info(f"Adding document to category: {category}")
             
@@ -93,6 +100,9 @@ class CollegeChatbot:
     
     def search_documents(self, query: str, top_k: int = 5) -> List[Dict]:
         """Search for relevant documents"""
+        if not self.pinecone_available:
+            return []
+            
         try:
             logger.info(f"Searching for query: {query[:50]}...")
             

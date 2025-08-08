@@ -93,3 +93,8 @@
 2025-08-08 11:05:11,213 - src.database.models - INFO - Default admin user already exists
 2025-08-08 11:05:11,213 - logging_config - INFO - Database initialized successfully
 2025-08-08 11:05:11,218 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 11:05:12,875 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 11:05:12,875 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 11:05:12,875 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 11:05:16,123 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 11:05:16,124 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
