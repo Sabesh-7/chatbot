@@ -1,36 +1,35 @@
 import logging
 import os
 from datetime import datetime
+from config import Config
 
 def setup_logging():
-    """Setup logging configuration for the application"""
+    """Setup logging configuration"""
     
     # Create logs directory if it doesn't exist
-    if not os.path.exists('logs'):
-        os.makedirs('logs')
+    os.makedirs(Config.LOG_DIR, exist_ok=True)
     
-    # Create log filename with timestamp
-    log_filename = f"logs/app_{datetime.now().strftime('%Y%m%d')}.log"
+    # Create logger
+    logger = logging.getLogger()
+    logger.setLevel(getattr(logging, Config.LOG_LEVEL.upper()))
     
-    # Configure logging
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-        handlers=[
-            # File handler - logs to file
-            logging.FileHandler(log_filename, encoding='utf-8'),
-            # Console handler - logs to console
-            logging.StreamHandler()
-        ]
+    # Create formatter
+    formatter = logging.Formatter(
+        '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
     
-    # Set specific log levels for different modules
-    logging.getLogger('sqlalchemy.engine').setLevel(logging.WARNING)
-    logging.getLogger('urllib3').setLevel(logging.WARNING)
+    # Create file handler
+    log_file = os.path.join(Config.LOG_DIR, f'app_{datetime.now().strftime("%Y%m%d")}.log')
+    file_handler = logging.FileHandler(log_file)
+    file_handler.setFormatter(formatter)
     
-    # Create logger for the application
-    logger = logging.getLogger(__name__)
-    logger.info("Logging system initialized")
+    # Create console handler
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(formatter)
+    
+    # Add handlers to logger
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
     
     return logger
 

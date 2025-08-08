@@ -98,3 +98,392 @@
 2025-08-08 11:05:12,875 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
 2025-08-08 11:05:16,123 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
 2025-08-08 11:05:16,124 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 13:32:07,062 - logging_config - INFO - Logging system initialized
+2025-08-08 13:32:07,142 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:32:07,157 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:32:07,183 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:32:07,187 - src.database.models - INFO - Creating default admin user
+2025-08-08 13:32:07,187 - src.database.models - ERROR - Failed to initialize MongoDB database: User.__init__() missing 1 required positional argument: 'password_hash'
+2025-08-08 13:32:07,187 - logging_config - ERROR - Failed to initialize database: User.__init__() missing 1 required positional argument: 'password_hash'
+2025-08-08 13:32:44,886 - logging_config - INFO - Logging system initialized
+2025-08-08 13:32:44,888 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:32:44,914 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:32:44,915 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:32:44,916 - src.database.models - INFO - Creating default admin user
+2025-08-08 13:32:44,916 - src.database.models - ERROR - Failed to initialize MongoDB database: User.__init__() missing 1 required positional argument: 'password_hash'
+2025-08-08 13:32:44,916 - logging_config - ERROR - Failed to initialize database: User.__init__() missing 1 required positional argument: 'password_hash'
+2025-08-08 13:41:06,543 - logging_config - INFO - Logging system initialized
+2025-08-08 13:41:06,614 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:41:06,630 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:41:06,632 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:41:06,633 - src.database.models - INFO - Creating default admin user
+2025-08-08 13:41:07,019 - src.database.models - INFO - Default admin user created: admin/admin123
+2025-08-08 13:41:07,020 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:41:20,359 - logging_config - INFO - Logging system initialized
+2025-08-08 13:41:20,360 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:41:20,368 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:41:20,369 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:41:20,370 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:41:20,370 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:41:20,374 - src.ui.interfaces - INFO - Login attempt for user: admin
+2025-08-08 13:41:20,374 - src.database.auth - INFO - Authenticating user: admin
+2025-08-08 13:41:20,401 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:41:20,812 - src.database.auth - INFO - User admin authenticated successfully
+2025-08-08 13:41:20,813 - src.ui.interfaces - ERROR - Login error for user admin: 'User' object has no attribute 'id'
+2025-08-08 13:44:32,676 - logging_config - INFO - Logging system initialized
+2025-08-08 13:44:32,746 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:44:32,799 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:44:32,800 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:44:32,801 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:44:32,801 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:44:45,870 - logging_config - INFO - Logging system initialized
+2025-08-08 13:44:45,871 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:44:45,916 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:44:45,918 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:44:45,919 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:44:45,919 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:44:45,924 - src.ui.interfaces - INFO - Login attempt for user: admin
+2025-08-08 13:44:45,924 - src.database.auth - INFO - Authenticating user: admin
+2025-08-08 13:44:45,948 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:44:46,325 - src.database.auth - WARNING - Authentication failed for user: admin
+2025-08-08 13:44:46,326 - src.ui.interfaces - WARNING - Failed login attempt for user: admin
+2025-08-08 13:44:56,145 - logging_config - INFO - Logging system initialized
+2025-08-08 13:44:56,147 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:44:56,172 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:44:56,173 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:44:56,174 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:44:56,175 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:44:56,179 - src.ui.interfaces - INFO - Login attempt for user: admin
+2025-08-08 13:44:56,180 - src.database.auth - INFO - Authenticating user: admin
+2025-08-08 13:44:56,219 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:44:56,618 - src.database.auth - INFO - User admin authenticated successfully
+2025-08-08 13:44:56,620 - src.ui.interfaces - INFO - User admin logged in successfully as admin
+2025-08-08 13:44:56,818 - logging_config - INFO - Logging system initialized
+2025-08-08 13:44:56,819 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:44:56,856 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:44:56,857 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:44:56,858 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:44:56,859 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:44:56,903 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:45:17,626 - logging_config - INFO - Logging system initialized
+2025-08-08 13:45:17,627 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:45:17,667 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:45:17,668 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:45:17,669 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:45:17,670 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:45:17,866 - logging_config - INFO - Logging system initialized
+2025-08-08 13:45:17,867 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:45:17,914 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:45:17,916 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:45:17,916 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:45:17,917 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:46:27,156 - logging_config - INFO - Logging system initialized
+2025-08-08 13:46:27,157 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:46:27,165 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:46:27,166 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:46:27,167 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:46:27,168 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:46:27,178 - src.ui.interfaces - INFO - Registration attempt for user: thejes
+2025-08-08 13:46:27,179 - src.database.auth - INFO - Creating new user: thejes
+2025-08-08 13:46:27,188 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:46:27,573 - src.database.auth - INFO - User thejes created successfully
+2025-08-08 13:46:27,574 - src.ui.interfaces - INFO - User thejes registered successfully
+2025-08-08 13:46:54,929 - logging_config - INFO - Logging system initialized
+2025-08-08 13:46:54,930 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:46:54,945 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:46:54,947 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:46:54,948 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:46:54,948 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:46:54,953 - src.ui.interfaces - INFO - Login attempt for user: thejes
+2025-08-08 13:46:54,954 - src.database.auth - INFO - Authenticating user: thejes
+2025-08-08 13:46:54,975 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:46:55,364 - src.database.auth - INFO - User thejes authenticated successfully
+2025-08-08 13:46:55,365 - src.ui.interfaces - INFO - User thejes logged in successfully as student
+2025-08-08 13:46:55,563 - logging_config - INFO - Logging system initialized
+2025-08-08 13:46:55,564 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:46:55,584 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:46:55,585 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:46:55,586 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:46:55,586 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:46:55,592 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 13:46:58,797 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 13:46:58,798 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 13:46:58,798 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 13:47:05,007 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 13:47:05,009 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 13:47:17,021 - logging_config - INFO - Logging system initialized
+2025-08-08 13:47:17,023 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:47:17,030 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:47:17,032 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:47:17,033 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:47:17,033 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:47:17,039 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 13:47:19,196 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 13:47:19,196 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 13:47:19,197 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 13:47:21,940 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 13:47:21,942 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 13:47:21,946 - src.ui.interfaces - INFO - Quick action - Exam Schedule by user thejes
+2025-08-08 13:47:21,946 - src.chatbot.college_chatbot - INFO - Searching for query: What is the exam schedule?...
+2025-08-08 13:47:24,582 - src.chatbot.college_chatbot - INFO - Found 2 matches for query
+2025-08-08 13:47:24,804 - logging_config - INFO - Logging system initialized
+2025-08-08 13:47:24,806 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:47:24,827 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:47:24,828 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:47:24,829 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:47:24,829 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:47:24,835 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 13:47:26,779 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 13:47:26,779 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 13:47:26,780 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 13:47:29,417 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 13:47:29,418 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 13:52:18,390 - logging_config - INFO - Logging system initialized
+2025-08-08 13:52:18,391 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:52:18,431 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:52:18,432 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:52:18,433 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:52:18,433 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:52:18,437 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 13:52:19,924 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 13:52:19,924 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 13:52:19,924 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 13:52:23,258 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 13:52:23,260 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 13:52:23,265 - src.ui.interfaces - INFO - Quick action - Placement Statistics by user thejes
+2025-08-08 13:52:23,265 - src.chatbot.college_chatbot - INFO - Searching for query: What are the latest placement statistics?...
+2025-08-08 13:52:25,823 - src.chatbot.college_chatbot - INFO - Found 2 matches for query
+2025-08-08 13:52:26,054 - logging_config - INFO - Logging system initialized
+2025-08-08 13:52:26,056 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:52:26,086 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:52:26,088 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:52:26,089 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:52:26,089 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:52:26,095 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 13:52:27,775 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 13:52:27,776 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 13:52:27,776 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 13:52:30,409 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 13:52:30,410 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 13:52:47,061 - logging_config - INFO - Logging system initialized
+2025-08-08 13:52:47,063 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 13:52:47,084 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 13:52:47,086 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 13:52:47,087 - src.database.models - INFO - Default admin user already exists
+2025-08-08 13:52:47,087 - logging_config - INFO - Database initialized successfully
+2025-08-08 13:52:47,094 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 13:52:49,398 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 13:52:49,399 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 13:52:49,399 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 13:52:52,177 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 13:52:52,179 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 13:52:52,180 - src.ui.interfaces - INFO - Chat query from user thejes: Who is dinesh r...
+2025-08-08 13:52:52,181 - src.chatbot.college_chatbot - INFO - Searching for query: Who is dinesh r...
+2025-08-08 13:52:54,190 - src.chatbot.college_chatbot - INFO - Found 2 matches for query
+2025-08-08 13:52:54,192 - src.ui.interfaces - INFO - Response generated successfully for user thejes
+2025-08-08 14:07:22,270 - logging_config - INFO - Logging system initialized
+2025-08-08 14:07:22,334 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:07:23,392 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:07:23,572 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:07:23,638 - src.database.models - INFO - Creating default admin user
+2025-08-08 14:07:24,087 - src.database.models - INFO - Default admin user created: admin/admin123
+2025-08-08 14:07:24,088 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:07:33,526 - logging_config - INFO - Logging system initialized
+2025-08-08 14:07:33,527 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:07:34,289 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:07:34,449 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:07:34,516 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:07:34,516 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:07:34,520 - src.ui.interfaces - INFO - Login attempt for user: admin
+2025-08-08 14:07:34,520 - src.database.auth - INFO - Authenticating user: admin
+2025-08-08 14:07:35,300 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:07:35,804 - src.database.auth - INFO - User admin authenticated successfully
+2025-08-08 14:07:35,805 - src.ui.interfaces - INFO - User admin logged in successfully as admin
+2025-08-08 14:07:36,009 - logging_config - INFO - Logging system initialized
+2025-08-08 14:07:36,011 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:07:36,800 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:07:36,957 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:07:37,021 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:07:37,021 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:07:37,803 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:07:42,261 - logging_config - INFO - Logging system initialized
+2025-08-08 14:07:42,262 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:07:43,115 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:07:43,274 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:07:43,337 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:07:43,337 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:07:44,138 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:07:54,684 - logging_config - INFO - Logging system initialized
+2025-08-08 14:07:54,685 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:07:55,705 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:07:55,873 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:07:55,933 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:07:55,934 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:07:56,696 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:08:21,487 - logging_config - INFO - Logging system initialized
+2025-08-08 14:08:21,488 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:08:21,711 - logging_config - INFO - Logging system initialized
+2025-08-08 14:08:21,712 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:08:22,490 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:08:22,646 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:08:22,702 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:08:22,702 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:08:22,712 - src.ui.interfaces - INFO - Adding information: Zoho Company to category: Placements
+2025-08-08 14:08:22,714 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 14:08:24,266 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:08:24,420 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:08:24,479 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:08:24,480 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:08:25,764 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 14:08:25,764 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 14:08:25,765 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 14:08:31,944 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 14:08:31,946 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 14:08:31,946 - src.chatbot.college_chatbot - INFO - Adding document to category: Placements
+2025-08-08 14:08:35,160 - src.chatbot.college_chatbot - INFO - Document added successfully with ID: d81f111a63007d3fe6b469c1005fca2f
+2025-08-08 14:08:35,160 - src.ui.interfaces - INFO - Information added successfully: Zoho Company
+2025-08-08 14:08:35,966 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:08:50,191 - logging_config - INFO - Logging system initialized
+2025-08-08 14:08:50,193 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:08:51,233 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:08:51,430 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:08:51,492 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:08:51,492 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:08:51,708 - logging_config - INFO - Logging system initialized
+2025-08-08 14:08:51,709 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:08:52,483 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:08:52,656 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:08:52,716 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:08:52,717 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:09:22,990 - logging_config - INFO - Logging system initialized
+2025-08-08 14:09:22,992 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:09:23,871 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:09:24,027 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:09:24,087 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:09:24,087 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:09:24,099 - src.ui.interfaces - INFO - Registration attempt for user: thejes
+2025-08-08 14:09:24,099 - src.database.auth - INFO - Creating new user: thejes
+2025-08-08 14:09:24,877 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:09:25,384 - src.database.auth - INFO - User thejes created successfully
+2025-08-08 14:09:25,385 - src.ui.interfaces - INFO - User thejes registered successfully
+2025-08-08 14:09:39,502 - logging_config - INFO - Logging system initialized
+2025-08-08 14:09:39,503 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:09:40,244 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:09:40,404 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:09:40,491 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:09:40,492 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:09:40,496 - src.ui.interfaces - INFO - Login attempt for user: thejes
+2025-08-08 14:09:40,496 - src.database.auth - INFO - Authenticating user: thejes
+2025-08-08 14:09:41,301 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:09:41,800 - src.database.auth - INFO - User thejes authenticated successfully
+2025-08-08 14:09:41,801 - src.ui.interfaces - INFO - User thejes logged in successfully as student
+2025-08-08 14:09:42,007 - logging_config - INFO - Logging system initialized
+2025-08-08 14:09:42,008 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:09:42,893 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:09:43,055 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:09:43,113 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:09:43,114 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:09:43,120 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 14:09:45,187 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 14:09:45,187 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 14:09:45,188 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 14:09:47,992 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 14:09:47,993 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 14:09:52,419 - logging_config - INFO - Logging system initialized
+2025-08-08 14:09:52,421 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:09:54,174 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:09:54,319 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:09:54,378 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:09:54,379 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:09:54,385 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 14:09:56,244 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 14:09:56,245 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 14:09:56,245 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 14:09:59,231 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 14:09:59,233 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 14:09:59,236 - src.ui.interfaces - INFO - Quick action - Placement Statistics by user thejes
+2025-08-08 14:09:59,237 - src.chatbot.college_chatbot - INFO - Searching for query: What are the latest placement statistics?...
+2025-08-08 14:10:01,283 - src.chatbot.college_chatbot - INFO - Found 3 matches for query
+2025-08-08 14:10:01,506 - logging_config - INFO - Logging system initialized
+2025-08-08 14:10:01,508 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:10:02,273 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:10:02,438 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:10:02,501 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:10:02,502 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:10:02,510 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 14:10:04,670 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 14:10:04,671 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 14:10:04,671 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 14:10:07,323 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 14:10:07,325 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 14:10:26,092 - logging_config - INFO - Logging system initialized
+2025-08-08 14:10:26,094 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:10:26,986 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:10:27,145 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:10:27,207 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:10:27,207 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:10:27,213 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 14:10:29,160 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 14:10:29,161 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 14:10:29,161 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 14:10:31,976 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 14:10:31,978 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 14:10:31,979 - src.ui.interfaces - INFO - Chat query from user thejes: Zoho company...
+2025-08-08 14:10:31,980 - src.chatbot.college_chatbot - INFO - Searching for query: Zoho company...
+2025-08-08 14:10:33,874 - src.chatbot.college_chatbot - INFO - Found 3 matches for query
+2025-08-08 14:10:33,875 - src.ui.interfaces - INFO - Response generated successfully for user thejes
+2025-08-08 14:10:41,372 - logging_config - INFO - Logging system initialized
+2025-08-08 14:10:41,374 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:10:42,128 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:10:42,287 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:10:42,342 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:10:42,342 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:10:42,349 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 14:10:44,135 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 14:10:44,135 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 14:10:44,135 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 14:10:46,844 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 14:10:46,845 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 14:10:46,851 - src.ui.interfaces - INFO - Quick action - Exam Schedule by user thejes
+2025-08-08 14:10:46,852 - src.chatbot.college_chatbot - INFO - Searching for query: What is the exam schedule?...
+2025-08-08 14:10:48,767 - src.chatbot.college_chatbot - INFO - Found 3 matches for query
+2025-08-08 14:10:48,998 - logging_config - INFO - Logging system initialized
+2025-08-08 14:10:48,999 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:10:49,776 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:10:49,937 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:10:50,001 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:10:50,002 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:10:50,008 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 14:10:51,658 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 14:10:51,658 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 14:10:51,658 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 14:10:54,341 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 14:10:54,343 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 14:11:07,601 - logging_config - INFO - Logging system initialized
+2025-08-08 14:11:07,602 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:11:08,452 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:11:08,615 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:11:08,674 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:11:08,675 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:11:08,682 - src.chatbot.college_chatbot - INFO - Pinecone client initialized successfully
+2025-08-08 14:11:10,698 - src.chatbot.college_chatbot - INFO - Pinecone index connected successfully
+2025-08-08 14:11:10,698 - src.chatbot.college_chatbot - INFO - Loading sentence transformer model...
+2025-08-08 14:11:10,699 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-08 14:11:14,033 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-08 14:11:14,035 - src.chatbot.college_chatbot - INFO - Sentence transformer model loaded successfully
+2025-08-08 14:11:14,036 - src.ui.interfaces - INFO - Chat query from user thejes: How many students placed at zoho...
+2025-08-08 14:11:14,038 - src.chatbot.college_chatbot - INFO - Searching for query: How many students placed at zoho...
+2025-08-08 14:11:15,855 - src.chatbot.college_chatbot - INFO - Found 3 matches for query
+2025-08-08 14:11:15,856 - src.ui.interfaces - INFO - Response generated successfully for user thejes
+2025-08-08 14:12:48,262 - logging_config - INFO - Logging system initialized
+2025-08-08 14:12:48,264 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:12:49,145 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:12:49,296 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:12:49,353 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:12:49,354 - logging_config - INFO - Database initialized successfully
+2025-08-08 14:12:49,567 - logging_config - INFO - Logging system initialized
+2025-08-08 14:12:49,568 - src.database.models - INFO - Initializing MongoDB database...
+2025-08-08 14:12:50,348 - src.database.models - INFO - MongoDB connection successful
+2025-08-08 14:12:50,499 - src.database.models - INFO - MongoDB database initialized successfully
+2025-08-08 14:12:50,561 - src.database.models - INFO - Default admin user already exists
+2025-08-08 14:12:50,561 - logging_config - INFO - Database initialized successfully

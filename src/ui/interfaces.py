@@ -218,7 +218,7 @@ def login_interface():
                             if user:
                                 st.session_state.authenticated = True
                                 st.session_state.user_role = user.role
-                                st.session_state.user_id = user.id
+                                st.session_state.user_id = user._id
                                 st.session_state.username = user.username
                                 logger.info(f"User {username} logged in successfully as {user.role}")
                                 st.success("Login successful!")
